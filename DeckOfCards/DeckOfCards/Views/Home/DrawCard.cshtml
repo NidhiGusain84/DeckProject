@@ -1,0 +1,26 @@
+﻿@model DrawCardResponse
+@{
+    ViewData["Title"] = "DrawCard";
+}
+
+<h1>DrawCard </h1>
+
+<div class="card">
+    <div class="card-title">Deck @Model.Deck_id</div>
+    <div class="card-body">
+        @foreach (var item in Model.Cards)
+        {
+            <div>
+                @item.Suit
+                @item.Value
+            </div>
+
+            <img src="@item.Image" />
+
+        }
+    </div>
+</div>
+
+
+
+

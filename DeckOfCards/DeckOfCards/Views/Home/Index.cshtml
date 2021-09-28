@@ -1,0 +1,10 @@
+﻿@model DeckResponse
+@{
+    ViewData["Title"] = "New Deck";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Brand New Deck</h1>
+    <p>Deck Id = @Model.Deck_id</p>
+    <a href="/Home/DrawCard?deckId=@Model.Deck_id" class="btn btn-primary"> Draw Card </a>
+</div>
